@@ -6,25 +6,59 @@ img {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/*Contenedor para acomodar la imagen primero junto con el espacio necesario*/
-.contenedor {
-  display: flex; /* Activa flexbox */
-  flex-direction: row; /* Hace que el flex se aplique tipo linea, osea a la derecha de mi imagen*/
-   /* Espacio entre todos los elementos dentro del contenedor */
-  margin-left: 100px;
+/*Para teléfonos o tablets*/
+@media (min-width: 767px) and (max-width: 990px){
+  /*Contenedor para acomodar la imagen primero junto con el espacio necesario*/
+  .contenedor {
+    display: flex;
+    /* Activa flexbox */
+    flex-direction: column;
+    /* Hace que el flex se aplique tipo linea, osea a la derecha de mi imagen*/
+    /* Espacio entre todos los elementos dentro del contenedor */
+    margin-left: 100px;
+  }
+
+  .contenedor2 {
+    margin-left: 100px;
+  }
+
+  .font {
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  .texto {
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 100px;
+  }
 }
 
-.contenedor2 {
-  margin-left: 100px;
-}
+/*Para compus*/
+@media (min-width: 991px) {
 
-.font {
+  /*Contenedor para acomodar la imagen primero junto con el espacio necesario*/
+  .contenedor {
+    display: flex;
+    /* Activa flexbox */
+    flex-direction: row;
+    /* Hace que el flex se aplique tipo linea, osea a la derecha de mi imagen*/
+    /* Espacio entre todos los elementos dentro del contenedor */
+    margin-left: 100px;
+  }
+
+  .contenedor2 {
+    margin-left: 100px;
+  }
+
+  .font {
     font-size: 24px;
     font-family: "Comic Sans MS", cursive, sans-serif;
-}
+  }
 
-.texto {
+  .texto {
     font-size: 24px;
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin-left: 100px;
+  }
 }
