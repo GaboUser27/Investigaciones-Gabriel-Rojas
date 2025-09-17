@@ -1,64 +1,58 @@
 img {
   border-radius: 20px;
+  max-width: 100%;
+  /* Que no se salga del contenedor */
+  height: auto;
 }
 
 .letra {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/*Para teléfonos o tablets*/
-@media (min-width: 767px) and (max-width: 990px){
-  /*Contenedor para acomodar la imagen primero junto con el espacio necesario*/
-  .contenedor {
+.font {
+  font-size: 24px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.texto {
+  font-size: 24px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: 100px;
+}
+
+.contenedor {
     display: flex;
-    /* Activa flexbox */
-    flex-direction: column;
-    /* Hace que el flex se aplique tipo linea, osea a la derecha de mi imagen*/
-    /* Espacio entre todos los elementos dentro del contenedor */
+    flex-direction: wrap; /* Imagen arriba, texto debajo */
+    gap: 20px;
     margin-left: 100px;
+    align-items: flex-start;
+  }
+
+.contenedor2 {
+  flex: 1;
+  margin-left: 100px;
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 990px) {
+  .contenedor {
+    flex-direction: column; /* Imagen arriba, texto debajo */
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .contenedor2 {
-    margin-left: 100px;
+    margin-left: 0;
   }
 
-  .font {
-    font-size: 24px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-
-  .texto {
-    font-size: 24px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-left: 100px;
+  .font, .texto {
+    font-size: 20px;
   }
 }
 
-/*Para compus*/
-@media (min-width: 991px) {
-
-  /*Contenedor para acomodar la imagen primero junto con el espacio necesario*/
-  .contenedor {
-    display: flex;
-    /* Activa flexbox */
-    flex-direction: row;
-    /* Hace que el flex se aplique tipo linea, osea a la derecha de mi imagen*/
-    /* Espacio entre todos los elementos dentro del contenedor */
-    margin-left: 100px;
-  }
-
-  .contenedor2 {
-    margin-left: 100px;
-  }
-
-  .font {
-    font-size: 24px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-
-  .texto {
-    font-size: 24px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-left: 100px;
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  .font, .texto {
+    font-size: 18px;
   }
 }
