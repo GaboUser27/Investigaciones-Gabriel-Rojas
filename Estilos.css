@@ -112,7 +112,10 @@ nav a:hover{
   }
 
   .header{
-  flex-direction: column;
+    flex-direction: column;
+    min-height: 120px; /* Aumenta un poco la altura mínima */
+    padding: 20px 10px; /* Más espacio para que se vea el degradado */
+    background: linear-gradient(273deg, rgba(181, 21, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
   }
 
   nav{
