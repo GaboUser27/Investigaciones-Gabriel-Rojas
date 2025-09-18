@@ -112,7 +112,12 @@ nav a:hover{
     margin-left: 0;
   }
 
-  .font, .texto {
+  .texto{
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  .font{
     font-size: 20px;
   }
 
@@ -120,7 +125,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 160px; /* más altura para móviles */
+    min-height: 180px; /* más altura para móviles */
     padding: 20px 10px;
     width: 100%;
   }
@@ -158,7 +163,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 180px; /* más altura para móviles */
+    min-height: 200px; /* más altura para móviles */
     padding: 18px 8px;
     width: 100%;
   }
@@ -167,12 +172,17 @@ nav a:hover{
     padding: 10px 0px;
   }
 
+  .texto{
+    margin-left: 0px;
+    font-size: 18px;
+  }
+
   .logo {
     flex-direction: column;
     align-items: center;
   }
 
-  .font, .texto , .enlaces, .letraCompania{
+  .font, .enlaces, .letraCompania{
     font-size: 18px;
   }
 }
