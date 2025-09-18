@@ -116,15 +116,15 @@ nav a:hover{
 @media (max-width: 990px) {
   .contenedor {
     flex-direction: column;
-    margin: 2px;
+    margin: 10px;
   }
 
   .contenedor2 {
-    margin: 2px;
+    margin: 10px;
   }
 
   .texto{
-    margin: 2px;
+    margin: 10px;
     font-size: 20px;
   }
 
@@ -143,7 +143,7 @@ nav a:hover{
   }
 
   .enlaces {
-    margin: 2px;
+    margin: 10px;
     padding-left: 20px;
 }
 
@@ -159,7 +159,7 @@ nav a:hover{
   }
 
   .letraCompania {
-    margin: 2px; /* elimina el margen que lo desplazaba */
+    margin: 10px; /* elimina el margen que lo desplazaba */
     text-align: center; /* centra el texto */
     font-size: 20px;   /* opcional, para que no se vea gigante */
   }
@@ -170,11 +170,11 @@ nav a:hover{
 
   .contenedor {
     flex-direction: column;
-    margin: 2px;
+    margin: 10px;
   }
 
   .contenedor2 {
-    margin: 2px;
+    margin: 10px;
   }
 
   .header {
@@ -199,12 +199,12 @@ nav a:hover{
   }
 
   .font,.letraCompania,.texto{
-    margin: 2px;
+    margin: 10px;
     font-size: 18px;
   }
 
   .enlaces {
-    margin: 2px;          
+    margin: 10px;          
     padding-left: 20px; 
   }
 }
