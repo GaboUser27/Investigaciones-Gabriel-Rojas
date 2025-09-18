@@ -242,15 +242,15 @@ nav a:hover {
   }
 
   .video-container {
-    width: calc(100% - 20px); /* ancho total de pantalla menos un pequeño espacio */
-    margin-left: 10px;        /* espacio a la izquierda */
-    margin-right: 10px;       /* espacio a la derecha */
-    max-width: 100%;           /* nunca excede el ancho de pantalla */
+    width: 100%;          /* ocupa todo el ancho del viewport */
+    padding-left: 10px;   /* pequeño espacio interno a la izquierda */
+    padding-right: 10px;  /* pequeño espacio interno a la derecha */
+    box-sizing: border-box; /* importante para que el padding no agrande el contenedor */
   }
 
   .video-container iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    width: 100%;          /* se ajusta al ancho del contenedor */
+    aspect-ratio: 16/9;   /* mantiene proporción */
+    display: block;       /* evita espacios extra debajo */
   }
 }
