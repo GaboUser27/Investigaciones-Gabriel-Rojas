@@ -202,12 +202,10 @@ nav a:hover {
   .contenedor {
     flex-direction: column;
     margin: 10px;
-    width: 100%;
   }
 
   .contenedor2 {
     margin: 10px;
-    width: 100%;
   }
 
   .header {
@@ -232,7 +230,7 @@ nav a:hover {
   }
 
   .font,.letraCompania,.texto {
-    margin: 20px;
+    margin: 10px;
     font-size: 18px;
   }
 
