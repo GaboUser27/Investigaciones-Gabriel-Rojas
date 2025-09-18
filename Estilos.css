@@ -143,8 +143,9 @@ nav a:hover{
   }
 
   .enlaces{
-    margin: 0; 
-    margin-left: 0px;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    font-size: 20px;
   }
 
   nav{
@@ -199,8 +200,8 @@ nav a:hover{
   }
 
   .font,.letraCompania,.enlaces,.texto{
-    margin: 0; 
-    margin-left: 0px;
+    margin: 0 !important;
+    margin-left: 0 !important;
     font-size: 18px;
   }
 }
