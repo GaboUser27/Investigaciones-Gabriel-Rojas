@@ -118,14 +118,16 @@ nav a:hover {
 
 .video-container{
   max-width: 40rem;
-  width: auto;
-  margin-left: 100px;
+  width: 100%;
+  padding-left: 100px; /* para PC */
+  padding-right: 0;
+  box-sizing: border-box;
 }
 
 .video-container iframe{
   width: 100%;
-  height: auto;
   aspect-ratio: 16 / 9;
+  display: block;
 }
 
 /* Ajustes para pantallas medianas (tablets) */
