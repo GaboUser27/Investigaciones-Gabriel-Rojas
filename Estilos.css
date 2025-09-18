@@ -142,11 +142,10 @@ nav a:hover{
     max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
-  .enlaces{
-    margin: 0 !important;
-    margin-left: 0 !important;
-    font-size: 20px;
-  }
+  .enlaces {
+    margin: 0;          /* quita margen por defecto */
+    padding: 0;         /* quita padding por defecto */
+}
 
   nav{
     padding: 10px 0px;
@@ -199,9 +198,13 @@ nav a:hover{
     max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
-  .font,.letraCompania,.enlaces,.texto{
-    margin: 0 !important;
-    margin-left: 0 !important;
+  .font,.letraCompania,.texto{
+    margin: 0;
     font-size: 18px;
   }
+
+  .enlaces {
+    margin: 0;          /* quita margen por defecto */
+    padding: 0;         /* quita padding por defecto */
+}
 }
