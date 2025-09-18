@@ -202,10 +202,12 @@ nav a:hover {
   .contenedor {
     flex-direction: column;
     margin: 20px;
+    width: 100%;
   }
 
   .contenedor2 {
     margin: 20px;
+    width: 100%;
   }
 
   .header {
@@ -244,10 +246,9 @@ nav a:hover {
   }
 
   .video-container {
-    width: 100%;          /* ocupa todo el ancho del viewport */
-    padding-left: 10px;   /* pequeño espacio interno a la izquierda */
-    padding-right: 10px;  /* pequeño espacio interno a la derecha */
-    box-sizing: border-box; /* importante para que el padding no agrande el contenedor */
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%; /* ocupe todo el ancho del dispositivo */
   }
 
   .video-container iframe {
