@@ -246,6 +246,8 @@ nav a:hover {
   }
 
   .video-container {
+    padding-left: 0;   /* elimina ese 100px */
+    padding-right: 0;
     margin-left: 10px;
     margin-right: 10px;
     max-width: 100%; /* ocupe todo el ancho del dispositivo */
