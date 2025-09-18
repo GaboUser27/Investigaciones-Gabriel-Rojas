@@ -241,9 +241,17 @@ nav a:hover {
     padding-left: 20px;
   }
 
-  .video-container{
-    max-width: calc(100% - 20px);
-    margin-left: 10px;
-    margin-right: 10px; 
+  .video-container {
+    width: 100%;           /* ocupa todo el ancho disponible */
+    max-width: 100%;       /* no se pase del ancho del viewport */
+    padding-left: 10px;    /* margen interno */
+    padding-right: 10px;   /* margen interno */
+    margin-left: 10px;        /* eliminamos margen externo */
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 }
