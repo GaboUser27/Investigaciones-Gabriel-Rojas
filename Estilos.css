@@ -242,11 +242,10 @@ nav a:hover {
   }
 
   .video-container {
-    width: 100%;           /* ocupa todo el ancho disponible */
-    max-width: 100%;       /* no se pase del ancho del viewport */
-    padding-left: 10px;    /* margen interno */
-    padding-right: 10px;   /* margen interno */
-    margin-left: 10px;        /* eliminamos margen externo */
+    width: calc(100% - 20px); /* ancho total de pantalla menos un pequeño espacio */
+    margin-left: 10px;        /* espacio a la izquierda */
+    margin-right: 10px;       /* espacio a la derecha */
+    max-width: 100%;           /* nunca excede el ancho de pantalla */
   }
 
   .video-container iframe {
