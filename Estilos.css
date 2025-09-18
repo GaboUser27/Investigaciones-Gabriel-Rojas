@@ -67,7 +67,7 @@ img {
 
 .logo img{
   height: 100px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 .textoLinks{
@@ -124,6 +124,12 @@ nav a:hover{
 
   nav{
     padding: 10px 0px;
+  }
+
+  .letraCompania {
+    margin-left: 0; /* elimina el margen que lo desplazaba */
+    text-align: center; /* centra el texto */
+    font-size: 20px;   /* opcional, para que no se vea gigante */
   }
 }
 
