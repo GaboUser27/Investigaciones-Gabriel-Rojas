@@ -20,6 +20,20 @@ img {
   margin-left: 100px;
 }
 
+.enlaces {
+  font-size: 24px;
+  color: blue;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: 100px;
+}
+
+.letraCompania {
+  font-size: 24px;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: 100px;
+}
+
 .contenedor {
     display: flex;
     flex-direction: wrap;
@@ -31,6 +45,54 @@ img {
 .contenedor2 {
   flex: 1;
   margin-left: 100px;
+}
+
+.header{
+  display: flex;
+  min-height: 90px;
+  background: #b51500;
+  background: linear-gradient(273deg, rgba(181, 21, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 100px;
+  margin-right: 10px;
+}
+
+.textoLinks{
+  text-decoration: none;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 10px;
+}
+
+nav a{
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover{
+  color: red;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  background: white;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Ajustes para pantallas medianas (tablets) */
@@ -48,11 +110,19 @@ img {
   .font, .texto {
     font-size: 20px;
   }
+
+  .header{
+  flex-direction: column;
+  }
+
+  nav{
+    padding: 10px 0px;
+  }
 }
 
 /* Ajustes para pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
-  .font, .texto {
+  .font, .texto , .enlaces, .letraCompania{
     font-size: 18px;
   }
 }
