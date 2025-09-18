@@ -244,7 +244,7 @@ nav a:hover {
     width: 100%;
     padding-left: 10px;
     padding-right: 0;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .video-container iframe {
@@ -253,9 +253,3 @@ nav a:hover {
     display: block;
   } 
 }
-
-/*  min-width: 35rem;
-    
-
-
-  */
