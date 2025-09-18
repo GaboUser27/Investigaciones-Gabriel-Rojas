@@ -240,9 +240,11 @@ nav a:hover {
   }
 
   .video-container {
-    max-width: 20rem;
+    max-width: 80rem;
     width: 100%;
-    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 0;
+    margin-left: 10px;
   }
 
   
@@ -250,11 +252,7 @@ nav a:hover {
 }
 
 /*  min-width: 35rem;
-    max-width: 80rem;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 0;
-    margin-left: 10px;
+    
 
 
   .video-container iframe {
