@@ -144,6 +144,7 @@ nav a:hover{
 
   .enlaces{
     margin: 0; 
+    margin-left: 0px;
   }
 
   nav{
@@ -199,6 +200,7 @@ nav a:hover{
 
   .font,.letraCompania,.enlaces,.texto{
     margin: 0; 
+    margin-left: 0px;
     font-size: 18px;
   }
 }
