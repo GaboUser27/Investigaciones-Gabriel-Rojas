@@ -143,8 +143,8 @@ nav a:hover{
   }
 
   .enlaces {
-    margin: 0;          /* quita margen por defecto */
-    padding: 0;         /* quita padding por defecto */
+    margin: 0;
+    padding-left: 20px;
 }
 
   nav{
@@ -204,7 +204,7 @@ nav a:hover{
   }
 
   .enlaces {
-    margin: 0;          /* quita margen por defecto */
-    padding: 0;         /* quita padding por defecto */
-}
+    margin: 0;          
+    padding-left: 20px; 
+  }
 }
