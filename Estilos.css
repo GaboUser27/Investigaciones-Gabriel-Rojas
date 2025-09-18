@@ -240,23 +240,22 @@ nav a:hover {
   }
 
   .video-container {
-    max-width: 80rem;
+    max-width: 40rem;
     width: 100%;
     padding-left: 10px;
     padding-right: 0;
     margin-left: 10px;
   }
 
-  
-  
+  .video-container iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+  } 
 }
 
 /*  min-width: 35rem;
     
 
 
-  .video-container iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
-    display: block;
-  }*/
+  */
