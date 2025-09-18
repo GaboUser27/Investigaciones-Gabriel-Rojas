@@ -137,6 +137,30 @@ nav a:hover{
 
 /* Ajustes para pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
+
+  .contenedor {
+    flex-direction: column;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .contenedor2 {
+    margin-left: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px; /* más altura para móviles */
+    padding: 18px 8px;
+    width: 100%;
+  }
+
+  nav{
+    padding: 10px 0px;
+  }
+
   .font, .texto , .enlaces, .letraCompania{
     font-size: 18px;
   }
