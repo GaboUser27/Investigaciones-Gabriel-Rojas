@@ -1,3 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box; /* incluye padding en ancho total */
+}
+
 img {
   border-radius: 20px;
   max-width: 100%;
@@ -51,7 +62,7 @@ img {
 .header{
   display: flex;
   flex-direction: row;
-  min-height: 90px;
+  min-height: 120px;
   background: linear-gradient(273deg, rgba(181, 21, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,6 +70,7 @@ img {
   align-items: center;
   padding: 10px;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box; 
 }
 
@@ -128,15 +140,18 @@ nav a:hover{
     min-height: 180px; /* más altura para móviles */
     padding: 20px 10px;
     width: 100%;
+    max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
   nav{
     padding: 10px 0px;
+    max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
   .logo {
     flex-direction: column; /*logo y texto tipo columna*/
     align-items: center;
+    max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
   .letraCompania {
@@ -166,10 +181,12 @@ nav a:hover{
     min-height: 200px; /* más altura para móviles */
     padding: 18px 8px;
     width: 100%;
+    max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
   nav{
     padding: 10px 0px;
+    max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
   .texto{
@@ -180,6 +197,7 @@ nav a:hover{
   .logo {
     flex-direction: column;
     align-items: center;
+    max-width: 100%;   /* no permiten que el contenido exceda el header */
   }
 
   .font, .enlaces, .letraCompania{
