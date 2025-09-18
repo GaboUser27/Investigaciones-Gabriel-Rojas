@@ -52,6 +52,7 @@ img {
   min-height: 90px;
   background: #b51500;
   background: linear-gradient(273deg, rgba(181, 21, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  background-size: cover;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -111,11 +112,11 @@ nav a:hover{
     font-size: 20px;
   }
 
-  .header{
+  .header {
     flex-direction: column;
-    min-height: 120px; /* Aumenta un poco la altura mínima */
-    padding: 20px 10px; /* Más espacio para que se vea el degradado */
-    background: linear-gradient(273deg, rgba(181, 21, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    padding: 20px 10px;
+    height: auto;       /* Que crezca según el contenido */
+    align-items: center; /* Centrar el contenido */
   }
 
   nav{
