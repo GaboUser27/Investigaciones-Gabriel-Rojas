@@ -118,12 +118,13 @@ nav a:hover {
 
 .video-container{
   max-width: 40rem;
-  width: 100%;
+  width: auto;
   margin-left: 100px;
 }
 
 .video-container iframe{
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
 }
 
@@ -188,7 +189,7 @@ nav a:hover {
   }
 
   .video-container{
-    max-width: 30rem;
+    max-width: 35rem;
     margin-left: 20px;
   }
 }
@@ -241,7 +242,8 @@ nav a:hover {
   }
 
   .video-container{
-    max-width: 30rem;
+    max-width: calc(100% - 20px);
     margin-left: 20px;
+    margin-right: 20px; 
   }
 }
