@@ -118,6 +118,7 @@ nav a:hover {
 
 .video-container{
   max-width: 40rem;
+  width: 100%;
   margin-left: 100px;
 }
 
@@ -187,6 +188,7 @@ nav a:hover {
   }
 
   .video-container{
+    max-width: 30rem;
     margin-left: 20px;
   }
 }
@@ -228,9 +230,7 @@ nav a:hover {
     /* no permiten que el contenido exceda el header */
   }
 
-  .font,
-  .letraCompania,
-  .texto {
+  .font,.letraCompania,.texto {
     margin: 20px;
     font-size: 18px;
   }
@@ -241,6 +241,7 @@ nav a:hover {
   }
 
   .video-container{
+    max-width: 30rem;
     margin-left: 20px;
   }
 }
