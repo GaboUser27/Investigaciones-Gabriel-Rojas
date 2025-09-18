@@ -116,24 +116,14 @@ nav a:hover {
   flex-direction: column;
 }
 
-.video-container {
-  position: relative;
+.video-container{
+  max-width: 40rem;
+  margin-left: 100px;
+}
+
+.video-container iframe{
   width: 100%;
-  /* ocupa todo el ancho del contenedor */
-  max-width: 850px;
-  /* opcional: limitar el ancho máximo */
-  margin-left: 150px;
-  /* centra el video y agrega espacio arriba y abajo */
-  padding-bottom: 26.10%;
-  /* altura proporcional para 16:9 */
-  height: 0;
-  /* se controla con padding-bottom */
-  overflow: hidden;
-  /* oculta cualquier desbordamiento */
-  border-radius: 10px;
-  /* opcional: bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /* opcional: sombra ligera */
+  aspect-ratio: 16 / 9;
 }
 
 /* Ajustes para pantallas medianas (tablets) */
@@ -173,10 +163,6 @@ nav a:hover {
     padding-left: 20px;
   }
 
-  .video-container {
-    margin: 20px;
-  }
-
   nav {
     padding: 10px 0px;
     max-width: 100%;
@@ -198,6 +184,10 @@ nav a:hover {
     /* centra el texto */
     font-size: 20px;
     /* opcional, para que no se vea gigante */
+  }
+
+  .video-container{
+    margin-left: 20px;
   }
 }
 
@@ -250,7 +240,7 @@ nav a:hover {
     padding-left: 20px;
   }
 
-  .video-container {
-    margin: 20px;
+  .video-container{
+    margin-left: 20px;
   }
 }
