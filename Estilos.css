@@ -244,7 +244,7 @@ nav a:hover {
     padding-right: 0;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 100%; /* ocupa todo el ancho del dispositivo */
+    max-width: 30rem;
   }
 
   .video-container iframe {
