@@ -240,17 +240,24 @@ nav a:hover {
   }
 
   .video-container {
-    min-width: 35rem;
+    max-width: 30rem;
+    margin-left: 20px;
+  }
+
+  
+  
+}
+
+/*  min-width: 35rem;
     max-width: 80rem;
     width: 100%;
     padding-left: 10px;
     padding-right: 0;
     margin-left: 10px;
-  }
+
 
   .video-container iframe {
-    width: 100%;          /* se ajusta al ancho del contenedor */
-    aspect-ratio: 16/9;   /* mantiene proporción */
-    display: block;       /* evita espacios extra debajo */
-  }
-}
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+  }*/
