@@ -116,9 +116,10 @@ nav a:hover{
 
   .header {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px; /* más altura para móviles */
     padding: 20px 10px;
-    height: auto;       /* Que crezca según el contenido */
-    align-items: center; /* Centrar el contenido */
   }
 
   nav{
