@@ -30,15 +30,15 @@ function realizarBusqueda() {
 
     // Según el valor escrito, mostramos una imagen diferente
     if (texto.toLowerCase() === "seo") {
-        imagenResultado.src = "imagenes/seo.png"; // aquí pones la ruta a tu imagen SEO
+        imagenResultado.src = "Imagenes/SEO.png"; // aquí pones la ruta a tu imagen SEO
         imagenResultado.alt = "Imagen SEO";
         imagenResultado.style.display = "block";
     } else if (texto.toLowerCase() === "dcu") {
-        imagenResultado.src = "imagenes/usabilidadweb.png"; // aquí pones la ruta a tu imagen DCU
+        imagenResultado.src = "Imagenes/UsabilidadWeb.png"; // aquí pones la ruta a tu imagen DCU
         imagenResultado.alt = "Imagen DCU";
         imagenResultado.style.display = "block";
     } else if (texto.toLowerCase() === "company") {
-        imagenResultado.src = "imagenes/logo1.png"; // aquí pones la ruta a tu imagen Company
+        imagenResultado.src = "Imagenes/Logo1.png"; // aquí pones la ruta a tu imagen Company
         imagenResultado.alt = "Imagen Company";
         imagenResultado.style.display = "block";
     } else {
