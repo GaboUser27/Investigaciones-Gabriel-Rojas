@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investigación Accesibilidad Web</title>
     <link rel="stylesheet" href="Estilos.css">
+    <style>
+        p{
+            display: inline-block;
+        }
+
+        p:focus{
+            outline: none;
+            border-bottom: 3px solid red;
+        }
+
+        .code-container{
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+            max-width: 840px;
+            align-items: center;
+        }
+
+        pre{
+            margin: 0;
+        }
+
+        code{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+
+        button{
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,9 +68,10 @@
     </header>
     <main>
         <br><br><br>
-        <p class="texto"><b>¿Qué es Accesibilidad Web?</b></p>
+        <p class="texto" tabindex="0"><b>¿Qué es Accesibilidad Web?</b></p>
         <section class="contenedor" id="definicion">
-            <p class="font">La accesibilidad web se refiere a la capacidad que tiene un sitio para ser utilizado por <br>
+            <p class="font">La accesibilidad web se refiere a la capacidad que tiene un sitio para ser utilizado por
+                <br>
                 todas las personas, incluyendo aquellas con discapacidades físicas, visuales, auditivas <br>
                 o cognitivas. Un sitio accesible permite que cualquier usuario, sin importar ninguna de <br>
                 sus limitaciones, pueda navegar, entender y utilizar sus contenidos sin barreras. <br><br>
@@ -42,18 +87,100 @@
             </div>
         </section>
         <br>
-        <h1 class="texto">Importancia de la accesibilidad web</h1>
+        <p class="texto" tabindex="0"><b>Importancia de la accesibilidad web</b></p>
         <section class="contenedor" id="Importancia AWEB">
             <p class="font" style="text-align: justify;">
-                La accesibilidad web es fundamental para garantizar que todos los usuarios, sin importar sus capacidades, puedan interactuar con los sitios de manera <br>
-                efectiva. Al considerar las necesidades de personas con discapacidades, se promueve la inclusión digital y se evita así la exclusión de una parte muy <br>
-                significativa de la población. Esto no solo mejora la experiencia del usuario, sino que también reduce barreras, errores y frustraciones.
-                Además, <br> implementar accesibilidad desde el inicio del diseño permite cumplir con normativas legales, evitar costos por rediseños y ampliar el alcance <br>
-                del sitio. Un sitio accesible aumenta la confianza, la fidelidad y la participación de los usuarios, mejorando la funcionalidad y el impacto <br>
+                La accesibilidad web es fundamental para garantizar que todos los usuarios, sin importar sus
+                capacidades, puedan interactuar con los sitios de manera <br>
+                efectiva. Al considerar las necesidades de personas con discapacidades, se promueve la inclusión digital
+                y se evita así la exclusión de una parte muy <br>
+                significativa de la población. Esto no solo mejora la experiencia del usuario, sino que también reduce
+                barreras, errores y frustraciones.
+                Además, <br> implementar accesibilidad desde el inicio del diseño permite cumplir con normativas
+                legales, evitar costos por rediseños y ampliar el alcance <br>
+                del sitio. Un sitio accesible aumenta la confianza, la fidelidad y la participación de los usuarios,
+                mejorando la funcionalidad y el impacto <br>
                 del proyecto web en general.
             </p>
         </section>
         <br>
+        <section id="principiosWCAG">
+            <h1 class="texto">Principios de las WCAG</h1>
+            <br>
+            <ol>
+                <!--Perceptible-->
+                <div class="contenedor">
+                    <li class="font"><b>Perceptible: </b>
+                        <p class="font" style="text-align: justify;">El contenido debe ser presentado de forma que los
+                            usuarios puedan percibirlo. Ejemplo: texto
+                            alternativo en imágenes.</p>
+                    </li>
+                </div>
+                <div class="contenedor2">
+                    <div class="code-container">
+                        <pre><code id="codigo1">&lt;img src="paisaje.jpg" alt="Paisaje con montañas y un lago al atardecer"&gt;</code>   <button onclick="copiarCodigo('codigo1')">Copiar</button></pre> 
+                    </div>
+                </div>
+                <br>
+
+                <!-- Operable -->
+                <div class="contenedor">
+                    <li class="font"><b>Operable: </b>
+                        <p class="font" style="text-align: justify;">La interfaz debe ser operable por todos los
+                            usuarios, incluyendo aquellos que navegan con teclado.</p>
+                    </li>
+                </div>
+                <div class="contenedor2">
+                    <div class="code-container">
+                        <pre><code id="codigo2">&lt;button onclick="alert('¡Hola!')" tabindex="0"&gt;Haz clic aquí&lt;/button&gt;</code>         <button onclick="copiarCodigo('codigo2')">Copiar</button></pre>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Comprensible -->
+                <div class="contenedor">
+                    <li class="font"><b>Comprensible: </b>
+                        <p class="font" style="text-align: justify;">La información y el funcionamiento deben ser
+                            comprensibles. Ejemplo: etiquetas claras en formularios.</p>
+                    </li>
+                </div>
+                <div class="contenedor2">
+                <div class="code-container">
+                        <pre><code id="codigo3">&lt;label for="email"&gt;Correo electrónico:&lt;/label&gt; 
+&lt;input type="email" id="email" name="email" required&gt;</code>                               <button onclick="copiarCodigo('codigo3')">Copiar</button></pre>
+
+                </div>
+                </div>
+                <br>
+
+                <!-- Robusto -->
+                <div class="contenedor">
+                    <li class="font"><b>Robusto: </b>
+                        <p class="font" style="text-align: justify;">El contenido debe ser lo suficientemente robusto
+                            para ser interpretado por diferentes
+                            tecnologías de asistencia.</p>
+                    </li>
+                </div>
+                <div class="contenedor2">
+                    <div class="code-container">
+                        <pre><code id="codigo4">&lt;article&gt;
+
+    &lt;h2&gt;Título del artículo&lt;/h2&gt;
+    &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+&lt;/article&gt;</code>                                                                                         <button onclick="copiarCodigo('codigo4')">Copiar</button></pre>
+                    </div>
+                </div>
+            </ol>
+        </section>
+        <br>
     </main>
+    <script>
+        function copiarCodigo(id) {
+            const codigo = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(codigo).then(() => {
+                alert("Código copiado al portapapeles");
+            });
+        }
+    </script>
 </body>
 </html>
