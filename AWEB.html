@@ -52,14 +52,14 @@
 </head>
 <body>
     <header>
-        <section class="header">
-            <section class="logo">
+        <section class="header" role="banner">
+            <section class="logo" role="img" aria-label="Logo de la compañía">
                 <img src="Imagenes/Logo1.png" alt="Logo">
                 <div class="letraCompania">
                     <h2 class="nombre-compannia">Investigación Accesibilidad Web</h2>
                 </div>
             </section>
-            <nav>
+            <nav role="navigation" aria-label="Menú principal">
                 <a href="index.html" class="textoLinks">Inicio</a>
                 <a href="SEO.html" class="textoLinks">SEO</a>
                 <a href="DCU.html" class="textoLinks">DCU</a>
@@ -69,7 +69,7 @@
     <main>
         <br><br><br>
         <p class="texto" tabindex="0"><b>¿Qué es Accesibilidad Web?</b></p>
-        <section class="contenedor" id="definicion">
+        <section class="contenedor" id="definicion" role="region" aria-labelledby="definicion-cuerpo">
             <p class="font">La accesibilidad web se refiere a la capacidad que tiene un sitio para ser utilizado por
                 <br>
                 todas las personas, incluyendo aquellas con discapacidades físicas, visuales, auditivas <br>
@@ -88,7 +88,7 @@
         </section>
         <br>
         <p class="texto" tabindex="0"><b>Importancia de la accesibilidad web</b></p>
-        <section class="contenedor" id="Importancia AWEB">
+        <section class="contenedor" id="Importancia AWEB"  role="region" aria-labelledby="importancia-cuerpo">
             <p class="font" style="text-align: justify;">
                 La accesibilidad web es fundamental para garantizar que todos los usuarios, sin importar sus
                 capacidades, puedan interactuar con los sitios de manera <br>
@@ -104,20 +104,20 @@
             </p>
         </section>
         <br>
-        <section id="principiosWCAG">
+        <section id="principiosWCAG" role="region" aria-labelledby="principios">
             <h1 class="texto">Principios de las WCAG</h1>
             <br>
             <ol>
                 <!--Perceptible-->
                 <div class="contenedor">
-                    <li class="font"><b>Perceptible: </b>
+                    <li class="font" role="listitem" aria-label="Principio Perceptible"><b>Perceptible: </b>
                         <p class="font" style="text-align: justify;">El contenido debe ser presentado de forma que los
                             usuarios puedan percibirlo. Ejemplo: texto
                             alternativo en imágenes.</p>
                     </li>
                 </div>
-                <div class="contenedor2">
-                    <div class="code-container">
+                <div class="contenedor2" role="presentation">
+                    <div class="code-container"  role="group" aria-label="Ejemplo de código perceptible">
                         <pre><code id="codigo1">&lt;img src="paisaje.jpg" alt="Paisaje con montañas y un lago al atardecer"&gt;</code>   <button onclick="copiarCodigo('codigo1')">Copiar</button></pre> 
                     </div>
                 </div>
@@ -125,13 +125,13 @@
 
                 <!-- Operable -->
                 <div class="contenedor">
-                    <li class="font"><b>Operable: </b>
+                    <li class="font" role="listitem" aria-label="Principio Operable"><b>Operable: </b>
                         <p class="font" style="text-align: justify;">La interfaz debe ser operable por todos los
                             usuarios, incluyendo aquellos que navegan con teclado.</p>
                     </li>
                 </div>
-                <div class="contenedor2">
-                    <div class="code-container">
+                <div class="contenedor2" role="presentation">
+                    <div class="code-container" role="group" aria-label="Ejemplo de código operable">
                         <pre><code id="codigo2">&lt;button onclick="alert('¡Hola!')" tabindex="0"&gt;Haz clic aquí&lt;/button&gt;</code>         <button onclick="copiarCodigo('codigo2')">Copiar</button></pre>
                     </div>
                 </div>
@@ -139,13 +139,13 @@
 
                 <!-- Comprensible -->
                 <div class="contenedor">
-                    <li class="font"><b>Comprensible: </b>
+                    <li class="font" role="listitem" aria-label="Principio Comprensible"><b>Comprensible: </b>
                         <p class="font" style="text-align: justify;">La información y el funcionamiento deben ser
                             comprensibles. Ejemplo: etiquetas claras en formularios.</p>
                     </li>
                 </div>
-                <div class="contenedor2">
-                <div class="code-container">
+                <div class="contenedor2" role="presentation">
+                <div class="code-container" role="group" aria-label="Ejemplo de código comprensible">
                         <pre><code id="codigo3">&lt;label for="email"&gt;Correo electrónico:&lt;/label&gt; 
 &lt;input type="email" id="email" name="email" required&gt;</code>                               <button onclick="copiarCodigo('codigo3')">Copiar</button></pre>
 
@@ -155,14 +155,14 @@
 
                 <!-- Robusto -->
                 <div class="contenedor">
-                    <li class="font"><b>Robusto: </b>
+                    <li class="font" role="listitem" aria-label="Principio Robusto"><b>Robusto: </b>
                         <p class="font" style="text-align: justify;">El contenido debe ser lo suficientemente robusto
                             para ser interpretado por diferentes
                             tecnologías de asistencia.</p>
                     </li>
                 </div>
-                <div class="contenedor2">
-                    <div class="code-container">
+                <div class="contenedor2" role="presentation">
+                    <div class="code-container" role="group" aria-label="Ejemplo de código robusto">
                         <pre><code id="codigo4">&lt;article&gt;
 
     &lt;h2&gt;Título del artículo&lt;/h2&gt;
